@@ -30,11 +30,16 @@ override.tf.json
 
 # Keys
 
-*.key*
+
 
 # Directories
 Data/*
+*/keys/*
 
-vscode settings
+
+#vscode settings
 
 settings.json
+
+# python for now
+*.py

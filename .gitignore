@@ -43,3 +43,6 @@ settings.json
 
 # python for now
 *.py
+
+# Environment vars file
+.env

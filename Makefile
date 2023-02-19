@@ -7,3 +7,5 @@ format:
 test:
 	terraform fmt -check -recursive
 	terraform validate
+	# terraform plan -out=tfplan
+	# terraform show -json tfplan >> tfplan.json

@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     okta = {
-      source = "okta/okta"
+      source  = "okta/okta"
       version = "~> 3.42"
     }
   }
@@ -19,10 +19,10 @@ resource "okta_group" "external_sales" {
 }
 
 resource "okta_group_rule" "external_sales" {
-  name              = "department-sales"
-  status            = "ACTIVE"
+  name   = "department-sales"
+  status = "ACTIVE"
   group_assignments = [
-    resource.okta_group.external_sales.id]
-  expression_type   = "urn:okta:expression:1.0"
-  expression_value  = "String.stringContains(user.department,'sales')"
+  resource.okta_group.external_sales.id]
+  expression_type  = "urn:okta:expression:1.0"
+  expression_value = "String.stringContains(user.department,'sales')"
 }

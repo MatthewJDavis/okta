@@ -2,7 +2,7 @@
 terraform {
   required_providers {
     okta = {
-      source = "okta/okta"
+      source  = "okta/okta"
       version = "~> 3.42"
     }
   }
@@ -25,12 +25,12 @@ resource "okta_app_signon_policy_rule" "low_assurance" {
   factor_mode = "1FA"
   constraints = [
     jsonencode(
-    {
-      possession = {
-        deviceBound        = "REQUIRED"
-        phishingResistant = "REQUIRED"
+      {
+        possession = {
+          deviceBound       = "REQUIRED"
+          phishingResistant = "REQUIRED"
+        }
       }
-    }
     )
   ]
 }

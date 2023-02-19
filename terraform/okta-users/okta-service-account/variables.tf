@@ -7,5 +7,5 @@ variable "base_url" {
 }
 
 variable "password" {
- sensitive = true
+  sensitive = true
 }

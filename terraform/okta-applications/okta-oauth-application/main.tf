@@ -9,7 +9,7 @@ terraform {
 
 # org_name, base_url, client_id and private_key are all set in environment variables.
 provider "okta" {
-  scopes = ["okta.apps.manage"]
+  scopes = ["okta.apps.manage", "okta.apps.read", "okta.policies.read"]
 }
 
 resource "okta_app_oauth" "demo_app" {
@@ -19,7 +19,7 @@ resource "okta_app_oauth" "demo_app" {
   login_uri = "https://localhost:5001/authorization-code/callback"
   post_logout_redirect_uris = ["https://localhost:5001/signout-callback-oidc"]
   redirect_uris = ["https://localhost:5001/signin-oidc"]
-  omit_secret = false
+  omit_secret = true # if downloading to state- set to false and create logic to save somewhere secure.
   grant_types = ["authorization_code"]
   response_types = ["code"]
 }

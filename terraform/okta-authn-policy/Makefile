@@ -9,7 +9,8 @@ test:
 	terraform validate
 
 test-policy:
-	mv tfplan tfplan.old
+	rm -f tfplan
+	rm -f tfplan.json
 	terraform plan -out=tfplan
 	terraform show -json tfplan >> tfplan.json
 	pwsh -command 'Invoke-Pester -Path AuthenticationPolicy.Tests.ps1'

@@ -11,9 +11,9 @@ These use OAuth application to authenticate with Okta and the setting should be 
 
 ```bash
 export OKTA_API_CLIENT_ID="123456" # oauth app client id
-export OKTA_API_PRIVATE_KEY="/home/private_key.pem" # full path to private RSA format key
-export OKTA_BASE_URL="okta.com"
-export OKTA_ORG_NAME="dev-123456" #  Org name minus the domain
+export TF_VAR_private_key="/home/private_key.pem" # full path to private RSA format key
+export TF_VAR_base_url="okta.com"
+export TF_VAR_org_name="dev-123456" #  Org name minus the domain
 ```
 
 ### Makefile

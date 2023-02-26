@@ -23,5 +23,14 @@ provider "okta" {
 }
 ```
 
+Settings can also be configured in environment variables
+
+```bash
+ export OKTA_ORG_NAME=""
+ export OKTA_BASE_URL="okta.com"
+ export OKTA_API_CLIENT_ID=""
+ export OKTA_API_PRIVATE_KEY="/home/.jwks/privatekeyfile.pem"
+```
+
 [Okta Terraform Provider]: https://registry.terraform.io/providers/okta/okta/latest/docs
 [scopes]: https://developer.okta.com/docs/guides/implement-oauth-for-okta/scopes/

@@ -1,16 +1,14 @@
 terraform {
   required_providers {
     okta = {
-      source  = "okta/okta"
-      version = "~> 3.20"
-    }
+      source = "okta/okta"
+    version = "~> 3.42" }
   }
 }
 
-# Configure the Okta Provider - API token set in env var.
+# org_name, base_url, client_id and private_key are all set in environment variables.
 provider "okta" {
-  org_name = var.org_name
-  base_url = var.base_url
+  scopes = ["okta.users.manage"]
 }
 
 resource "okta_user" "terraform_application" {
@@ -23,8 +21,8 @@ resource "okta_user" "terraform_application" {
 }
 
 resource "okta_user" "terraform_application_svc" {
-  login       = "matthewdavis111+tokt@gmail.com"
-  email       = "matthewdavis111+tokt@gmail.com"
+  login       = "example+tokt@gmail.com"
+  email       = "example+tokt@gmail.com"
   first_name  = "Terraform"
   last_name   = "Application Automation"
   password    = var.password

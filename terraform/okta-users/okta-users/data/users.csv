@@ -1,3 +1,11 @@
 emp_id,first_name,last_name,department,honorificPrefix,title,userType,organization,division,preferredLanguage,countryCode
 1,Michael,Scott,Management,Mr,Regional Manager,Employee,Dunder Mifflin,Sales,en-US,US
 2,Dwight,Schrute,Sales,Mr,Salesperson,Employee,Dunder Mifflin,Sales,en-US,US
+3,Bratton,Creed,QA,Quality assurance rep,Mr,Employee,Dunder Mifflin,QA,en-US,US
+4,Hudson,Stanley,Sales,Salesperson,Mr,Employee,Dunder Mifflin,Sales,en-US,US
+5,Vance,Phyllis,Sales,Salesperson,Mrs,Employee,Dunder Mifflin,Sales,en-US,US
+6,Flenderson,Toby,HR,Human Resources Coordinator,Mr,Employee,Dunder Mifflin,HR,en-US,US
+7,Halpert,Jim,Sales,Salesperson,Mr,Employee,Dunder Mifflin,Sales,en-US,US
+8,Wallace,David,Management,CEO,Mr,Employee,Dunder Mifflin,Management,en-US,US
+9,Halpert,Pam,Facilities,Office Manager,Mrs,Employee,Dunder Mifflin,Facilities,en-US,US
+10,Kapoor,Kelly,Customer Service,Customer Service Manager,Ms,Employee,Dunder Mifflin,Customer Service,en-US,US

@@ -27,7 +27,7 @@ resource "okta_app_signon_policy_rule" "low_assurance" {
     jsonencode(
       {
         possession = {
-          deviceBound = "REQUIRED"
+          deviceBound       = "REQUIRED"
           phishingResistant = "REQUIRED"
         }
       }

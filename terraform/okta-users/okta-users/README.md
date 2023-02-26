@@ -12,3 +12,5 @@ This uses an OAuth application and should have the ```okta.users.manage``` scope
  export OKTA_API_CLIENT_ID=""
  export OKTA_API_PRIVATE_KEY="/home/.jwks/privatekeyfile.pem"
 ```
+
+Users based off and shout out to the work of: https://github.com/tdmitch/DunderMifflin/blob/master/DataFiles/Employees.txt
